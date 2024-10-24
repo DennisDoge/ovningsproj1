@@ -125,7 +125,7 @@ Set the LED ring to red color for temperatures >= 30°C
 *Returns: void
 */
 void ledringRed() {
-  for (int i = 0; i < NUMPIXELS; i++) {
+  for (int i = 0; i < NUMPIXELS; i++) { //This is so that the led opens one by one Numpixels set that it was 24 led 
     pixels.setPixelColor(i, pixels.Color(255, 0, 0));  // Red color
   }
   pixels.show();  // Send updated colors to the LED ring
@@ -137,7 +137,7 @@ Set the LED ring to blue color for temperatures <= 24°C
 *Returns: void
 */
 void ledringBlue() {
-  for (int i = 0; i < NUMPIXELS; i++) {
+  for (int i = 0; i < NUMPIXELS; i++) { //This is so the led opens one by one
     pixels.setPixelColor(i, pixels.Color(0, 0, 255));  // Blue color
   }
   pixels.show();  // Send updated colors to the LED ring
@@ -145,7 +145,7 @@ void ledringBlue() {
 
 
 void ledringOrange() {
-  for (int i = 0; i < NUMPIXELS; i++) {
+  for (int i = 0; i < NUMPIXELS; i++) { //This is so that the led opens one by one 
     pixels.setPixelColor(i, pixels.Color(255, 128, 0));  // Orange color
   }
   pixels.show();  // Send updated colors to the LED ring
